@@ -30,10 +30,10 @@ void app_main() {
 	lcd_init(LCD_CURSOR_OFF, LCD_BLINK_OFF);
 
 	lcd_create_char(0, heart);
-	lcd_create_char(1, smiley);
-	lcd_create_char(2, omega);
-	lcd_create_char(3, plusMinus);
-	lcd_create_char(4, bell);
+	// lcd_create_char(1, smiley);
+	// lcd_create_char(2, omega);
+	// lcd_create_char(3, plusMinus);
+	// lcd_create_char(4, bell);
 
 	while(1) {
 		lcd_cursor(1, 1);

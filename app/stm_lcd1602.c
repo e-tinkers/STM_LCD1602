@@ -18,7 +18,7 @@ void gpio_config() {
 	RCC->IOPENR |= RCC_IOPENR_GPIOBEN;
 	// Reset pins and set to OUTPUT
 	(lcd.port)->MODER &= ~((GPIO_MODER_MODE4) | (GPIO_MODER_MODE5) | (GPIO_MODER_MODE6) | (GPIO_MODER_MODE7) | (GPIO_MODER_MODE8) | (GPIO_MODER_MODE9));
-    (lcd.port)->MODER |= ((GPIO_MODER_MODE4_0) | (GPIO_MODER_MODE5_0) | (GPIO_MODER_MODE6_0) | (GPIO_MODER_MODE7_0) | (GPIO_MODER_MODE8_0) | (GPIO_MODER_MODE9_0));
+	(lcd.port)->MODER |= ((GPIO_MODER_MODE4_0) | (GPIO_MODER_MODE5_0) | (GPIO_MODER_MODE6_0) | (GPIO_MODER_MODE7_0) | (GPIO_MODER_MODE8_0) | (GPIO_MODER_MODE9_0));
 }
 
 // Using HAL to toggle GPIO pins caused delay_us(1) to actually became 2us
