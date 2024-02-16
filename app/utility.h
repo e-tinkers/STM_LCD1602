@@ -13,7 +13,6 @@ void tim6_config() {
 	RCC->APBENR1 |= RCC_APBENR1_TIM6EN;
 
 	TIM6->CR1 = !TIM_CR1_CEN;    // disable timer
-	TIM6->CR1 |= TIM_CR1_ARPE;   // Auto-preload enabled
 	TIM6->PSC = 63;              // 64000000Hz/64 = 1000000Hz
 	TIM6->CNT = 0;
 	TIM6->CR1 |= TIM_CR1_CEN;    // enable timer
