@@ -71,6 +71,7 @@ typedef struct {
 	uint16_t rs;
 } LCD_t;
 
+void lcd_config(void);
 void lcd_write(uint8_t value, uint8_t rs);
 void lcd_cmd(uint8_t cmd);
 void lcd_data(char data);

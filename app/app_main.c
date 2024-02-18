@@ -22,7 +22,7 @@ const char bell[] = {0x00, 0x04, 0x0E, 0x0E, 0x0E, 0x1F, 0x04, 0x00};       // b
 
 void app_main() {
 
-	gpio_config();
+	lcd_config();
 
 	tim6_config();
 

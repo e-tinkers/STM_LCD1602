@@ -10,12 +10,12 @@
 
 LCD_t lcd = {
 	.port = GPIOB,
-	.rs = GPIO_PIN_9,
-	.en = GPIO_PIN_8,
-	.d4 = GPIO_PIN_4,
-	.d5 = GPIO_PIN_5,
-	.d6 = GPIO_PIN_6,
-	.d7 = GPIO_PIN_7
+	.rs = 9,
+	.en = 8,
+	.d4 = 4,
+	.d5 = 5,
+	.d6 = 6,
+	.d7 = 7
 };
 
 #endif /* LCD_CONFIG_H_ */
